@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px 200px 200px 200px 200px;
+    grid-template-areas: "Logo Nazov Nazov Nazov Nav Nav Nav" "TEXT1 TEXT1 TEXT1 FOTKA1 TEXT2 TEXT2 TEXT2" "TEXT1 TEXT1 TEXT1 FOTKA2 TEXT2 TEXT2 TEXT2" "TEXT3 TEXT3 TEXT4 TEXT4 TEXT4 FOTKA3 FOTKA4" "TEXT3 TEXT3 TEXT4 TEXT4 TEXT4 TEXT5 TEXT5" "FOTKA5 FOTKA5 TEXT4 TEXT4 TEXT4 TEXT5 TEXT5" "FOTKA5 FOTKA5 FOTKA6 FOTKA7 FOTKA8 TEXT5 TEXT5";
+    background-color: #2c2d30;
+    width: 1400px;
+    margin: auto;
+    }
+
+.logo img {
+    grid-area: Logo;
+    margin: 20% 0 0 25%;
+    height: 120px;
+}
+
+.nazov {
+    grid-area: Nazov;
+    font-family: 'Sen', sans-serif;
+    color: white;
+    margin-top: 13%;
+    font-size: 30px;
+}
+
+nav {
+    grid-area: Nav;
+    text-align: right;
+    padding: 4.5% 5% 0 0;
+    color: white;
+    margin-top: 10%;
+    margin-right: 3%;
+    font-family: 'Sen', sans-serif;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 12px;
+    padding: 2% 4%;
+    margin-left: 1%;
+    margin-right: 1%;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    position: sticky;
+    text-transform: uppercase;
+}
+ 
+nav a:hover {
+    opacity: 0.7;
+}
+
+.text1 { 
+    grid-area: TEXT1;
+    color: rgb(73, 71, 71);
+    background-color: white;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.text1 h1 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 8%;
+}
+
+.text1 p {
+    text-align: justify;
+    margin: 5% 5% 5% 5%;
+    line-height: 25px;
+    font-size: 14px;
+}
+
+.fotka1 { 
+    grid-area: FOTKA1;
+    background-color: white;
+}
+
+.fotka1 img {
+    height: 150px;
+    margin-left: 15%;
+    margin-top: 8%;
+}
+
+.fotka2 {
+    background-color: white;
+}
+
+.fotka2 img { 
+    grid-area: FOTKA2; 
+    height: 150px;
+    margin-left: 15%;
+    margin-top: 12%;
+}
+
+
+.text2 { 
+    grid-area: TEXT2; 
+    color: rgb(73, 71, 71);
+    background-color: white;
+}
+
+.text2 h1 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.text2 h2 {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20%;
+}
+
+.text2 p {
+    font-weight: bold;
+    text-align: center;
+    margin: 5% 5% 5% 5%;
+    line-height: 25px;
+    font-size: 20px;
+}
+
+.cervena {
+    color: red;
+}
+
+.zelena {
+    color: green;
+}
+
+.text3 { 
+    grid-area: TEXT3; 
+    color: rgb(73, 71, 71);
+    background-color: white;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.text3 h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 35%;
+}
+
+.text3 p {
+    text-align: justify;
+    margin: 5% 5% 5% 6%;
+    line-height: 25px;
+    font-size: 14px;
+    margin-top: 20%;
+}
+
+.text4 { 
+    grid-area: TEXT4; 
+    color: rgb(73, 71, 71);
+    background-color: white;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.text4 h1 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30%;
+}
+
+.text4 p {
+    text-align: justify;
+    margin: 5% 5% 5% 6%;
+    line-height: 25px;
+    font-size: 14px;
+    margin-top: 10%;
+}
+
+.fotka3 {
+    background-color: white;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.fotka3 img { 
+    grid-area: FOTKA3; 
+    height: 200px;
+}
+
+.fotka4 {
+    background-color: white;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.fotka4 img { 
+    grid-area: FOTKA4; 
+    height: 200px;
+}
+
+.text5 { 
+    grid-area: TEXT5; 
+    background-color: white;
+    color: rgb(73, 71, 71);
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.text5 h1 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.text5 p {
+    text-align: justify;
+    margin: 5% 5% 5% 6%;
+    line-height: 25px;
+    font-size: 14px;
+    margin-top: 10%;
+}
+
+.fotka5 { 
+    grid-area: FOTKA5; 
+    background-color: white;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.fotka5 img {
+    height: 399px;
+}
+
+.fotka6 img { 
+    grid-area: FOTKA6; 
+    height: 200px;
+}
+
+.fotka7 img { 
+    grid-area: FOTKA7; 
+    height: 200px;
+}
+
+.fotka8 {
+}
+
+.fotka8 img { 
+    grid-area: FOTKA8; 
+    height: 200px;
+}
